@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaDev — Aprenda Java do Zero</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Progress bar de scroll -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav>
+      <div class="logo">
+        <div class="logo-icon">J</div>
+        Java<span>Dev</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#modulos">Módulos</a></li>
+        <li><a href="#conteudo">Conteúdo</a></li>
+        <li><a href="#conceitos">Conceitos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div>
+        <div class="hero-tag">🚀 Curso Gratuito de Java</div>
+        <h1>
+          Aprenda a<br/>
+          programar em<br/>
+          <span class="highlight">Java</span> do zero
+        </h1>
+        <p>
+          Do "Hello World" à Orientação a Objetos. Aprenda Java com exemplos práticos, 
+          código real e explicações claras. Sem enrolação.
+        </p>
+        <div class="btn-group">
+          <a href="#conteudo" class="btn-primary">▶ Começar agora</a>
+          <a href="#modulos" class="btn-secondary">Ver módulos</a>
+        </div>
+      </div>
+
+      <div class="hero-code">
+        <div class="code-titlebar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="code-filename">HelloWorld.java</span>
+        </div>
+        <pre><span class="cm">// Meu primeiro programa Java</span>
+<span class="kw">public class</span> <span class="cn">HelloWorld</span> {
+
+    <span class="kw">public static void</span> <span class="fn">main</span>(<span class="cn">String</span>[] args) {
+
+        <span class="cm">// Imprime uma mensagem</span>
+        <span class="cn">System</span>.out.<span class="fn">println</span>(
+            <span class="st">"Olá, Mundo! 👋"</span>
+        );
+
+        <span class="cm">// Variáveis básicas</span>
+        <span class="kw">int</span> <span class="nm">idade</span> = <span class="nm">25</span>;
+        <span class="cn">String</span> <span class="nm">nome</span> = <span class="st">"Dev"</span>;
+
+        <span class="cn">System</span>.out.<span class="fn">println</span>(
+            <span class="nm">nome</span> + <span class="st">" tem "</span> + <span class="nm">idade</span>
+        );
+    }
+}</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div>
+        <div class="stat-number">8</div>
+        <div class="stat-label">Módulos completos</div>
+      </div>
+      <div>
+        <div class="stat-number">40+</div>
+        <div class="stat-label">Exemplos de código</div>
+      </div>
+      <div>
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Gratuito</div>
+      </div>
+      <div>
+        <div class="stat-number">0→∞</div>
+        <div class="stat-label">Iniciante ao avançado</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MÓDULOS ===== -->
+  <section id="modulos">
+    <div class="section-header">
+      <div class="section-tag">📚 Currículo</div>
+      <h2>O que você vai <span>aprender</span></h2>
+      <p>Conteúdo organizado em módulos progressivos, do básico ao intermediário.</p>
+    </div>
+
+    <div class="modules-grid">
+      <div class="module-card">
+        <div class="module-num">01</div>
+        <div class="module-icon">⚙️</div>
+        <h3>Introdução ao Java</h3>
+        <p>O que é Java, JVM, JDK e JRE. Instalação do ambiente e primeiro programa.</p>
+        <span class="module-badge badge-basic">Básico</span>
+      </div>
+      <div class="module-card">
+        <div class="module-num">02</div>
+        <div class="module-icon">📦</div>
+        <h3>Variáveis e Tipos</h3>
+        <p>Tipos primitivos, String, declaração de variáveis e operadores aritméticos.</p>
+        <span class="module-badge badge-basic">Básico</span>
+      </div>
+      <div class="module-card">
+        <div class="module-num">03</div>
+        <div class="module-icon">🔀</div>
+        <h3>Controle de Fluxo</h3>
+        <p>if/else, switch, operadores lógicos e relacionais para tomar decisões.</p>
+        <span class="module-badge badge-basic">Básico</span>
+      </div>
+      <div class="module-card">
+        <div class="module-num">04</div>
+        <div class="module-icon">🔁</div>
+        <h3>Laços de Repetição</h3>
+        <p>for, while, do-while e como percorrer listas e arrays.</p>
+        <span class="module-badge badge-basic">Básico</span>
+      </div>
+      <div class="module-card">
+        <div class="module-num">05</div>
+        <div class="module-icon">🧩</div>
+        <h3>Métodos</h3>
+        <p>Declaração, parâmetros, retorno, sobrecarga e escopo de variáveis.</p>
+        <span class="module-badge badge-inter">Intermediário</span>
+      </div>
+      <div class="module-card">
+        <div class="module-num">06</div>
+        <div class="module-icon">🏛️</div>
+        <h3>Classes e Objetos</h3>
+        <p>Fundamentos de OOP: classes, objetos, atributos, construtores e métodos.</p>
+        <span class="module-badge badge-inter">Intermediário</span>
+      </div>
+      <div class="module-card">
+        <div class="module-num">07</div>
+        <div class="module-icon">🧬</div>
+        <h3>Herança e Polimorfismo</h3>
+        <p>Reutilize código com herança, sobrescrita de métodos e interfaces.</p>
+        <span class="module-badge badge-adv">Avançado</span>
+      </div>
+      <div class="module-card">
+        <div class="module-num">08</div>
+        <div class="module-icon">🛡️</div>
+        <h3>Tratamento de Erros</h3>
+        <p>Exceções, try/catch/finally e como criar erros personalizados.</p>
+        <span class="module-badge badge-adv">Avançado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTEÚDO / LESSONS ===== -->
+  <section id="conteudo">
+    <div class="section-header">
+      <div class="section-tag">💻 Aulas</div>
+      <h2>Conteúdo <span>prático</span></h2>
+      <p>Exemplos reais e explicações diretas para cada conceito.</p>
+    </div>
+
+    <div class="lessons-container">
+      <div class="lesson-tabs">
+        <button class="tab-btn active" onclick="showTab('variaveis')">Variáveis</button>
+        <button class="tab-btn" onclick="showTab('fluxo')">Controle de Fluxo</button>
+        <button class="tab-btn" onclick="showTab('loops')">Laços</button>
+        <button class="tab-btn" onclick="showTab('metodos')">Métodos</button>
+        <button class="tab-btn" onclick="showTab('oop')">Classes e OOP</button>
+      </div>
+
+      <!-- Tab: Variáveis -->
+      <div class="lesson-content active" id="tab-variaveis">
+        <div class="lesson-block">
+          <h3><span class="icon">📦</span> Tipos Primitivos</h3>
+          <p>Java tem 8 tipos primitivos que armazenam valores simples diretamente na memória:</p>
+          <ul>
+            <li><strong>int</strong> — números inteiros (-2 bilhões a 2 bilhões)</li>
+            <li><strong>double</strong> — números decimais (ponto flutuante)</li>
+            <li><strong>boolean</strong> — verdadeiro ou falso</li>
+            <li><strong>char</strong> — um único caractere</li>
+            <li><strong>long</strong> — inteiros muito grandes</li>
+            <li><strong>float</strong> — decimal com menos precisão</li>
+            <li><strong>byte / short</strong> — inteiros pequenos</li>
+          </ul>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">JAVA</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+            </div>
+            <pre><span class="cm">// Declaração de variáveis em Java</span>
+<span class="kw">int</span> <span class="nm">idade</span> = <span class="nm">25</span>;
+<span class="kw">double</span> <span class="nm">salario</span> = <span class="nm">3500.50</span>;
+<span class="kw">boolean</span> <span class="nm">ativo</span> = <span class="kw">true</span>;
+<span class="kw">char</span> <span class="nm">letra</span> = <span class="st">'A'</span>;
+<span class="cn">String</span> <span class="nm">nome</span> = <span class="st">"Maria"</span>; <span class="cm">// Não é primitivo, é objeto</span>
+
+<span class="cm">// Imprimir no console</span>
+<span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Nome: "</span> + <span class="nm">nome</span>);
+<span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Idade: "</span> + <span class="nm">idade</span>);</pre>
+          </div>
+        </div>
+
+        <div class="lesson-block">
+          <h3><span class="icon">➕</span> Operadores</h3>
+          <p>Operadores permitem realizar cálculos e comparações:</p>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">JAVA</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+            </div>
+            <pre><span class="kw">int</span> <span class="nm">a</span> = <span class="nm">10</span>, <span class="nm">b</span> = <span class="nm">3</span>;
+
+<span class="cm">// Aritméticos</span>
+<span class="cn">System</span>.out.<span class="fn">println</span>(<span class="nm">a</span> + <span class="nm">b</span>);  <span class="cm">// 13</span>
+<span class="cn">System</span>.out.<span class="fn">println</span>(<span class="nm">a</span> - <span class="nm">b</span>);  <span class="cm">// 7</span>
+<span class="cn">System</span>.out.<span class="fn">println</span>(<span class="nm">a</span> * <span class="nm">b</span>);  <span class="cm">// 30</span>
+<span class="cn">System</span>.out.<span class="fn">println</span>(<span class="nm">a</span> / <span class="nm">b</span>);  <span class="cm">// 3 (inteiro!)</span>
+<span class="cn">System</span>.out.<span class="fn">println</span>(<span class="nm">a</span> % <span class="nm">b</span>);  <span class="cm">// 1 (resto)</span>
+
+<span class="cm">// Relacionais — retornam boolean</span>
+<span class="cn">System</span>.out.<span class="fn">println</span>(<span class="nm">a</span> > <span class="nm">b</span>);   <span class="cm">// true</span>
+<span class="cn">System</span>.out.<span class="fn">println</span>(<span class="nm">a</span> == <span class="nm">b</span>);  <span class="cm">// false</span></pre>
+          </div>
+          <div class="tip-box">
+            <strong>💡 Dica:</strong> Divisão entre dois <code>int</code> sempre resulta em inteiro.
+            Para obter decimal, use <code>double a = 10.0 / 3</code>.
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Controle de Fluxo -->
+      <div class="lesson-content" id="tab-fluxo">
+        <div class="lesson-block">
+          <h3><span class="icon">🔀</span> if / else</h3>
+          <p>Executa blocos de código com base em condições:</p>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">JAVA</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+            </div>
+            <pre><span class="kw">int</span> <span class="nm">nota</span> = <span class="nm">75</span>;
+
+<span class="kw">if</span> (<span class="nm">nota</span> >= <span class="nm">90</span>) {
+    <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Excelente!"</span>);
+} <span class="kw">else if</span> (<span class="nm">nota</span> >= <span class="nm">70</span>) {
+    <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Aprovado!"</span>);
+} <span class="kw">else</span> {
+    <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Reprovado."</span>);
+}
+<span class="cm">// Saída: "Aprovado!"</span></pre>
+          </div>
+        </div>
+
+        <div class="lesson-block">
+          <h3><span class="icon">🎛️</span> switch</h3>
+          <p>Alternativa ao if/else para múltiplas opções com um mesmo valor:</p>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">JAVA</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+            </div>
+            <pre><span class="kw">int</span> <span class="nm">dia</span> = <span class="nm">3</span>;
+
+<span class="kw">switch</span> (<span class="nm">dia</span>) {
+    <span class="kw">case</span> <span class="nm">1</span>:
+        <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Segunda-feira"</span>);
+        <span class="kw">break</span>;
+    <span class="kw">case</span> <span class="nm">2</span>:
+        <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Terça-feira"</span>);
+        <span class="kw">break</span>;
+    <span class="kw">case</span> <span class="nm">3</span>:
+        <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Quarta-feira"</span>);
+        <span class="kw">break</span>;
+    <span class="kw">default</span>:
+        <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Outro dia"</span>);
+}
+<span class="cm">// Saída: "Quarta-feira"</span></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Laços -->
+      <div class="lesson-content" id="tab-loops">
+        <div class="lesson-block">
+          <h3><span class="icon">🔁</span> for</h3>
+          <p>Quando você sabe quantas vezes repetir:</p>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">JAVA</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+            </div>
+            <pre><span class="cm">// Conta de 1 a 5</span>
+<span class="kw">for</span> (<span class="kw">int</span> <span class="nm">i</span> = <span class="nm">1</span>; <span class="nm">i</span> <= <span class="nm">5</span>; <span class="nm">i</span>++) {
+    <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Número: "</span> + <span class="nm">i</span>);
+}
+
+<span class="cm">// Percorrendo um array</span>
+<span class="kw">int</span>[] <span class="nm">numeros</span> = {<span class="nm">10</span>, <span class="nm">20</span>, <span class="nm">30</span>, <span class="nm">40</span>};
+<span class="kw">for</span> (<span class="kw">int</span> <span class="nm">n</span> : <span class="nm">numeros</span>) {
+    <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="nm">n</span>);
+}</pre>
+          </div>
+        </div>
+
+        <div class="lesson-block">
+          <h3><span class="icon">🔄</span> while e do-while</h3>
+          <p>Quando a quantidade de repetições é indefinida:</p>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">JAVA</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+            </div>
+            <pre><span class="cm">// while — verifica ANTES de executar</span>
+<span class="kw">int</span> <span class="nm">cont</span> = <span class="nm">0</span>;
+<span class="kw">while</span> (<span class="nm">cont</span> < <span class="nm">3</span>) {
+    <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Contagem: "</span> + <span class="nm">cont</span>);
+    <span class="nm">cont</span>++;
+}
+
+<span class="cm">// do-while — executa PELO MENOS uma vez</span>
+<span class="kw">int</span> <span class="nm">x</span> = <span class="nm">10</span>;
+<span class="kw">do</span> {
+    <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"x = "</span> + <span class="nm">x</span>);
+    <span class="nm">x</span>++;
+} <span class="kw">while</span> (<span class="nm">x</span> < <span class="nm">5</span>); <span class="cm">// Imprime uma vez mesmo assim</span></pre>
+          </div>
+          <div class="tip-box">
+            <strong>💡 Dica:</strong> Use <code>break</code> para sair do laço e <code>continue</code> para pular para a próxima iteração.
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Métodos -->
+      <div class="lesson-content" id="tab-metodos">
+        <div class="lesson-block">
+          <h3><span class="icon">🧩</span> Declarando Métodos</h3>
+          <p>Métodos organizam o código em blocos reutilizáveis:</p>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">JAVA</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+            </div>
+            <pre><span class="kw">public class</span> <span class="cn">Calculadora</span> {
+
+    <span class="cm">// Método que retorna a soma</span>
+    <span class="kw">public static int</span> <span class="fn">somar</span>(<span class="kw">int</span> <span class="nm">a</span>, <span class="kw">int</span> <span class="nm">b</span>) {
+        <span class="kw">return</span> <span class="nm">a</span> + <span class="nm">b</span>;
+    }
+
+    <span class="cm">// Método que não retorna nada (void)</span>
+    <span class="kw">public static void</span> <span class="fn">saudar</span>(<span class="cn">String</span> <span class="nm">nome</span>) {
+        <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="st">"Olá, "</span> + <span class="nm">nome</span> + <span class="st">"!"</span>);
+    }
+
+    <span class="kw">public static void</span> <span class="fn">main</span>(<span class="cn">String</span>[] <span class="nm">args</span>) {
+        <span class="kw">int</span> <span class="nm">resultado</span> = <span class="fn">somar</span>(<span class="nm">5</span>, <span class="nm">3</span>);
+        <span class="cn">System</span>.out.<span class="fn">println</span>(<span class="nm">resultado</span>); <span class="cm">// 8</span>
+        <span class="fn">saudar</span>(<span class="st">"Dev"</span>);            <span class="cm">// Olá, Dev!</span>
+    }
+}</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: OOP -->
+      <div class="lesson-content" id="tab-oop">
+        <div class="lesson-block">
+          <h3><span class="icon">🏛️</span> Classes e Objetos</h3>
+          <p>Uma classe é um modelo; um objeto é uma instância desse modelo:</p>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">JAVA</span>
+              <button class="copy-btn" onclick="copyCode(this)">Copiar</button>
+            </div>
+            <pre><span class="cm">// Definindo a classe</span>
+<span class="kw">public class</span> <span class="cn">Pessoa</span> {
+    <span class="cm">// Atributos</span>
+    <span class="cn">String</span> <span class="nm">nome</span>;
+    <span class="kw">int</span> <span class="nm">idade</span>;
+
+    <span class="cm">// Construtor</span>
+    <span class="kw">public</span> <span class="cn">Pessoa</span>(<span class="cn">String</span> <span class="nm">nome</span>, <span class="kw">int</span> <span class="nm">idade</span>) {
+        <span class="kw">this</span>.<span class="nm">nome</span> = <span class="nm">nome</span>;
+        <span class="kw">this</span>.<span class="nm">idade</span> = <span class="nm">idade</span>;
+    }
+
+    <span class="cm">// Método</span>
+    <span class="kw">public void</span> <span class="fn">apresentar</span>() {
+        <span class="cn">System</span>.out.<span class="fn">println</span>(
+            <span class="st">"Oi! Sou "</span> + <span class="nm">nome</span> + <span class="st">", tenho "</span> + <span class="nm">idade</span> + <span class="st">" anos."</span>
+        );
+    }
+}
+
+<span class="cm">// Usando a classe</span>
+<span class="cn">Pessoa</span> <span class="nm">p1</span> = <span class="kw">new</span> <span class="cn">Pessoa</span>(<span class="st">"Ana"</span>, <span class="nm">30</span>);
+<span class="nm">p1</span>.<span class="fn">apresentar</span>(); <span class="cm">// Oi! Sou Ana, tenho 30 anos.</span></pre>
+          </div>
+          <div class="tip-box">
+            <strong>💡 OOP:</strong> Os 4 pilares da Orientação a Objetos em Java são <strong>Encapsulamento</strong>, <strong>Herança</strong>, <strong>Polimorfismo</strong> e <strong>Abstração</strong>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONCEITOS ===== -->
+  <section id="conceitos">
+    <div class="section-header">
+      <div class="section-tag">🧠 Fundamentos</div>
+      <h2>Conceitos <span>essenciais</span></h2>
+      <p>Compare e entenda os conceitos-chave lado a lado.</p>
+    </div>
+
+    <div class="concepts-grid">
+      <div class="concept-card">
+        <div class="concept-info">
+          <h3>☕ JVM, JDK e JRE</h3>
+          <p><strong>JDK</strong> (Java Development Kit) — kit para desenvolver em Java.<br>
+          <strong>JRE</strong> (Java Runtime Environment) — para executar programas.<br>
+          <strong>JVM</strong> (Java Virtual Machine) — executa o bytecode Java em qualquer SO.</p>
+        </div>
+        <div class="code-block">
+          <div class="code-header">
+            <span class="code-lang">TERMINAL</span>
+          </div>
+          <pre><span class="cm"># Verificar instalação</span>
+java -version
+javac -version
+
+<span class="cm"># Compilar</span>
+javac Main.java
+
+<span class="cm"># Executar</span>
+java Main</pre>
+        </div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-info">
+          <h3>🔒 Encapsulamento</h3>
+          <p>Protege os dados de uma classe usando <strong>private</strong>. O acesso é feito por <strong>getters</strong> e <strong>setters</strong>.</p>
+        </div>
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">JAVA</span></div>
+          <pre><span class="kw">private</span> <span class="cn">String</span> <span class="nm">nome</span>;
+
+<span class="kw">public</span> <span class="cn">String</span> <span class="fn">getNome</span>() {
+    <span class="kw">return</span> <span class="nm">nome</span>;
+}
+
+<span class="kw">public void</span> <span class="fn">setNome</span>(
+    <span class="cn">String</span> <span class="nm">nome</span>
+) {
+    <span class="kw">this</span>.<span class="nm">nome</span> = <span class="nm">nome</span>;
+}</pre>
+        </div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-info">
+          <h3>🧬 Herança</h3>
+          <p>Uma classe pode <strong>herdar</strong> atributos e métodos de outra usando a palavra-chave <strong>extends</strong>.</p>
+        </div>
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">JAVA</span></div>
+          <pre><span class="kw">class</span> <span class="cn">Animal</span> {
+    <span class="kw">void</span> <span class="fn">comer</span>() {
+        <span class="cn">System</span>.out
+          .<span class="fn">println</span>(<span class="st">"Comendo"</span>);
+    }
+}
+
+<span class="kw">class</span> <span class="cn">Cachorro</span>
+    <span class="kw">extends</span> <span class="cn">Animal</span> {
+    <span class="kw">void</span> <span class="fn">latir</span>() {
+        <span class="cn">System</span>.out
+          .<span class="fn">println</span>(<span class="st">"Au au!"</span>);
+    }
+}</pre>
+        </div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-info">
+          <h3>🛡️ Exceções</h3>
+          <p>Tratamento de erros em tempo de execução com <strong>try/catch/finally</strong> para evitar que o programa quebre.</p>
+        </div>
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">JAVA</span></div>
+          <pre><span class="kw">try</span> {
+    <span class="kw">int</span> <span class="nm">r</span> = <span class="nm">10</span> / <span class="nm">0</span>;
+} <span class="kw">catch</span> (
+    <span class="cn">ArithmeticException</span> <span class="nm">e</span>
+) {
+    <span class="cn">System</span>.out.<span class="fn">println</span>(
+        <span class="st">"Erro: "</span> + <span class="nm">e</span>.<span class="fn">getMessage</span>()
+    );
+} <span class="kw">finally</span> {
+    <span class="cn">System</span>.out.<span class="fn">println</span>(
+        <span class="st">"Sempre executa"</span>
+    );
+}</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Java<span>Dev</span></div>
+      <p>Aprenda Java de forma prática e gratuita. Feito com ☕ e dedicação.</p>
+      <p style="margin-top: 1rem; font-size: 0.78rem;">
+        Java é marca registrada da Oracle Corporation.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Progress bar
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+      document.getElementById('progressBar').style.width = progress + '%';
+    });
+
+    // Tabs
+    function showTab(name) {
+      document.querySelectorAll('.lesson-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('tab-' + name).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    // Copy code
+    function copyCode(btn) {
+      const pre = btn.closest('.code-block').querySelector('pre');
+      const text = pre.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'Copiado!';
+        setTimeout(() => btn.textContent = 'Copiar', 2000);
+      });
+    }
+  </script>
+</body>
+</html>
